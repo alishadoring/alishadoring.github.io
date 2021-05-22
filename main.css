@@ -1,0 +1,13 @@
+h1 {
+	font-size: 8em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	letter-spacing: -0.02em;
+}
+p {
+	font-size: 1.5em;
+	margin-top: 0px;
+}
+h1,p{
+	font-family: Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
