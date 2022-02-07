@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica Neue,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,sans-serif;
+    color: #0099C9;
+    letter-spacing: -2px;
+    font-size: 30px;
+    margin-bottom: 0;
+    line-height: .9;
+    text-align: left;
+}
+body{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    min-height: 100vh;
+    background-color: #F2C5C9;
+}
+}
+gallery{
+    justify-content: left;
+}
