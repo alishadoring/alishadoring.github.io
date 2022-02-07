@@ -35,6 +35,7 @@ body{
 .content .quote-area{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .quote-area i{
     font-size: 10px;
@@ -70,6 +71,7 @@ body{
     background: #D30012;
 }
 .features button{
+    margin-top: 10px;
 border: none;
 outline: none;
 cursor: pointer;
