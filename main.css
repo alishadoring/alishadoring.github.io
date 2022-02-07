@@ -1,13 +1,28 @@
+*
+{background:#F2C5C9;}
+
 h1 {
-	font-size: 8em;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	letter-spacing: -0.02em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica Neue,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,sans-serif;
+    color: #0099C9;
+    letter-spacing: -2px;
+    font-size: 30px;
+    margin-bottom: 0;
+    line-height: .9;
 }
-p {
-	font-size: 1.5em;
-	margin-top: 0px;
-}
-h1,p{
-	font-family: Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-}
+p {margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,sans-serif;
+    color: #0099C9;
+    letter-spacing: -2px;
+    font-size: 30px;
+    margin-bottom: 0;
+    line-height: .9;
+
+
+
+
+
+a{font-family: Helvetica Neue,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,sans-serif;}
