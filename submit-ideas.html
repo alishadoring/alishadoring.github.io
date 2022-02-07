@@ -8,27 +8,21 @@
     <title>Submit your date ideas!</title>
 </head>
 <body>
-    <form action=”mailto:alisha@alishadoring.com”
+    <?php
 
 
-    method=”POST”
-    
-    
-    enctype=”multipart/form-data”
-    
-    
-    name=”EmailForm”>
-    
-    
-    Name:<br>
-    
-    
-    <input type=”text” size=”19″ name=”ContactName”><br><br>
-    
-    
-    Idea:<br> <textarea name=”ContactCommentt” rows=”6″ cols=”20″>
-    
-    
-    </textarea><br><br> <input type=”submit” value=”Submit”> </form>  
+if($_POST["message"]) {
+
+
+mail("your@email.address", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
+?>
 </body>
 </html>
