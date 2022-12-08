@@ -21,3 +21,7 @@ body{
 gallery{
     justify-content: left;
 }
+
+img {
+    width:100%;
+}
