@@ -35,6 +35,12 @@
                 center: [151.206740, -33.886736], // starting position [lng, lat]
                 zoom: 14.66, // starting zoom
                 });
+
+                const popup = new mapboxgl.Popup({ closeOnClick: false })
+        .setLngLat([151.206740, -33.886736])
+        .setHTML('<p>Hello, these are a few of my favourite places to cycle to!</p>')
+        .addTo(map);
+
                 </script>
 
             <section class="footer">
