@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="album-style.css">
     <title>Bicycle Blueprint Sydney | My favourite places to take my bike. </title>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
-
 </head>
 <body>
     <body>
@@ -26,16 +23,21 @@
                 <p></p>
                 <br>
            
-                <div id='map' style='width: 1400px; height: 650px;'></div>
-                <script>
-                mapboxgl.accessToken = 'pk.eyJ1IjoiYWxpc2hhZWxsZW4iLCJhIjoiY2xpYXltbmU5MDcwdjNrcGZhMjUwbGZqeSJ9.hpqLRWSYkJs9n-yuwfcKzA';
-                const map = new mapboxgl.Map({
-                container: 'map', // container ID
-                style: 'mapbox://styles/alishaellen/cliaze4hj00bg01rb0lr1ehbl', // style URL
-                center: [151.206740, -33.886736], // starting position [lng, lat]
-                zoom: 14.66, // starting zoom
-                });
-                </script>
+        
+        
+        
+            
+                <div class="mapbox">
+                    <iframe
+                      src="https://api.mapbox.com/styles/v1/alishaellen/cliaze4hj00bg01rb0lr1ehbl.html?title=false&access_token=pk.eyJ1IjoiYWxpc2hhZWxsZW4iLCJhIjoiY2xpYXltbmU5MDcwdjNrcGZhMjUwbGZqeSJ9.hpqLRWSYkJs9n-yuwfcKzA&zoomwheel=false#14.66/-33.88674/151.20674"
+                      width="1400"
+                      height="650"
+                      title="Bicycle Blueprint"
+                      style="border:none;"
+                      allowfullscreen=""
+                    ></iframe>
+                  </div>
+       
 
             <section class="footer">
                 <h4><a href='about.html'>Alisha </a> was here.</h4>
