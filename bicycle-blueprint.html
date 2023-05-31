@@ -8,10 +8,22 @@
     <title>Bicycle Blueprint Sydney | My favourite places to take my bike. </title>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        h3{
+            font-family: Helvetica Neue,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,sans-serif;
+            color: #0f6fff;
+            letter-spacing: -1px;
+            font-size: 20px;
+            margin-bottom: 0;
+            line-height: .9;
+            text-align: left;
+        }
+            </style>
 
 </head>
 <body>
     <body>
+        
     
         <h1 class="title">
             <a href='index.html'>Film/</a>
@@ -36,10 +48,30 @@
                 zoom: 14.66, // starting zoom
                 });
 
-                const popup = new mapboxgl.Popup({ closeOnClick: false })
-        .setLngLat([151.206740, -33.886736])
-        .setHTML('<p>Hello, these are a few of my favourite places to cycle to!</p>')
-        .addTo(map);
+                const popup = new mapboxgl.Popup({
+    closeOnClick: false
+  })
+  .setLngLat([151.206740, -33.886736])
+  .setHTML('<h3>Hello, these are all the places I love to cycle to!</h3>')
+  .addTo(map);
+
+        map.on('click', (event) => {
+        const features = map.queryRenderedFeatures(event.point, {
+          layers: ['favourite-places']
+        });
+        if (!features.length) {
+          return;
+        }
+        const feature = features[0];
+
+        const popup = new mapboxgl.Popup({ offset: [0, -15] })
+          .setLngLat(feature.geometry.coordinates)
+          .setHTML(
+            `<h3>${feature.properties.title}</h3><h3>${feature.properties.description}</h3>`
+          )
+          .addTo(map);
+        });
+    
 
                 </script>
 
